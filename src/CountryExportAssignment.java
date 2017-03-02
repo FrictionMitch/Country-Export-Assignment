@@ -18,11 +18,38 @@ public class CountryExportAssignment {
     }
 
     public void listExportersTwoProducts(CSVParser parser, String export1, String export2){
+        String none = "NONE FOUND";
+        int exportCount = 0;
         for(CSVRecord record : parser) {
             String country = record.get("Country");
             String export = record.get("Exports");
             if(export.contains(export1) && export.contains(export2)) {
                 System.out.println(country);
+                exportCount = 1;
+            }
+        }
+            if(exportCount == 0) {
+                System.out.println(none);
+            }
+    }
+
+    public int numberOfExporters(CSVParser parser, String exportItem) {
+        int numberOfCountries = 0;
+        for(CSVRecord record : parser) {
+            String export = record.get("Exports");
+            if(export.contains(exportItem)) {
+                numberOfCountries++;
+            }
+        }
+        return numberOfCountries;
+    }
+
+    public void bigExporters(CSVParser parser, String amount) {
+        for(CSVRecord record : parser) {
+            String value = record.get("Value (dollars)");
+            String country = record.get("Country");
+            if(value.length() > amount.length()) {
+                System.out.println(country + " " + value);
             }
         }
     }
@@ -33,6 +60,18 @@ public class CountryExportAssignment {
         System.out.println(countryInfo(parser, "Canada"));
 
         parser = fileResource.getCSVParser();
-        listExportersTwoProducts(parser, "gold", "diamonds");
+        String export1 = "gold";
+        String export2 = "diamonds";
+        System.out.printf("Countries with %s and %s are: %n", export1, export2);
+        listExportersTwoProducts(parser, export1, export2);
+
+        parser = fileResource.getCSVParser();
+        String export = "timber";
+        System.out.println("Number of countries which export " + export + " is: " + numberOfExporters(parser, export));
+
+        parser = fileResource.getCSVParser();
+        String val = "$999,999,999,999";
+        System.out.println("Countries with exports greater than " + val + " are: ");
+        bigExporters(parser, val);
     }
 }
