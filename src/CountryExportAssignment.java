@@ -5,7 +5,6 @@ public class CountryExportAssignment {
 
     public String countryInfo(CSVParser parser, String countryInput) {
 
-        int countryCheck = 0;
         String answer = "NOT FOUND";
         for (CSVRecord record : parser) {
             String country = record.get("Country");
@@ -19,12 +18,21 @@ public class CountryExportAssignment {
     }
 
     public void listExportersTwoProducts(CSVParser parser, String export1, String export2){
-
+        for(CSVRecord record : parser) {
+            String country = record.get("Country");
+            String export = record.get("Exports");
+            if(export.contains(export1) && export.contains(export2)) {
+                System.out.println(country);
+            }
+        }
     }
 
     public void tester() {
         FileResource fileResource = new FileResource("exportdata.csv");
         CSVParser parser = fileResource.getCSVParser();
         System.out.println(countryInfo(parser, "Canada"));
+
+        parser = fileResource.getCSVParser();
+        listExportersTwoProducts(parser, "gold", "diamonds");
     }
 }
