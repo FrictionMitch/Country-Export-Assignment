@@ -55,18 +55,19 @@ public class CountryExportAssignment {
     }
 
     public void tester() {
-        FileResource fileResource = new FileResource("exportdata.csv");
+        FileResource fileResource = new FileResource("files/exportdata.csv");
         CSVParser parser = fileResource.getCSVParser();
-        System.out.println(countryInfo(parser, "Canada"));
+        System.out.println(countryInfo(parser, "Nauru"));
+        System.out.println();
 
         parser = fileResource.getCSVParser();
         String export1 = "gold";
         String export2 = "diamonds";
-        System.out.printf("Countries with %s and %s are: %n", export1, export2);
+        System.out.printf("%nCountries with %s and %s are: %n", export1, export2);
         listExportersTwoProducts(parser, export1, export2);
 
         parser = fileResource.getCSVParser();
-        String export = "timber";
+        String export = "sugar";
         System.out.println("Number of countries which export " + export + " is: " + numberOfExporters(parser, export));
 
         parser = fileResource.getCSVParser();
