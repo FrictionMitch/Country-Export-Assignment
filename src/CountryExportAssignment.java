@@ -61,13 +61,13 @@ public class CountryExportAssignment {
         System.out.println();
 
         parser = fileResource.getCSVParser();
-        String export1 = "gold";
-        String export2 = "diamonds";
+        String export1 = "cotton";
+        String export2 = "flowers";
         System.out.printf("%nCountries with %s and %s are: %n", export1, export2);
         listExportersTwoProducts(parser, export1, export2);
 
         parser = fileResource.getCSVParser();
-        String export = "sugar";
+        String export = "cocoa";
         System.out.println("Number of countries which export " + export + " is: " + numberOfExporters(parser, export));
 
         parser = fileResource.getCSVParser();
