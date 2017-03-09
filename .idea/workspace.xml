@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26de57a-4589-4d94-9baa-35785c477f88" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Country Export Assignment/CountryExportAssignment.class" afterPath="$PROJECT_DIR$/out/production/Country Export Assignment/CountryExportAssignment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CountryExportAssignment.java" afterPath="$PROJECT_DIR$/src/CountryExportAssignment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/files/exportdata.csv" afterPath="$PROJECT_DIR$/src/files/exportdata.csv" />
     </list>
     <ignored path="Country Export Assignment.iws" />
@@ -39,7 +39,7 @@
       <file leaf-file-name="CountryExportAssignment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CountryExportAssignment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70264316">
+            <state vertical-scroll-proportion="2.2797356">
               <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -526,7 +526,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488537397736</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Quiz + Exam&#10;">
+      <created>1488994552751</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1488994552751</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -574,7 +580,8 @@
     <MESSAGE value="Part2&#10;" />
     <MESSAGE value="Part 5(Complete)" />
     <MESSAGE value="Part 5 + Quiz&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Part 5 + Quiz&#10;" />
+    <MESSAGE value="Quiz + Exam&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quiz + Exam&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -627,7 +634,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CountryExportAssignment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70264316">
+        <state vertical-scroll-proportion="2.2797356">
           <caret line="69" column="30" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
